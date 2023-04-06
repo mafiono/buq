@@ -1,0 +1,227 @@
+.slotHome {
+  width: 100%;
+
+  background: #354044;
+  padding: 10px 0;
+  margin: auto auto;
+
+  &__all {
+    width: 100%;
+    max-width: 1352px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .all__link {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      line-height: 13px;
+      padding: 20px;
+      align-content: center;
+      @media (max-width: 596px) {
+        justify-content: center;
+        line-height: 15px;
+        padding: 5px;
+      }
+
+      @media (max-width: 596px) {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px auto;
+      }
+      > i {
+        display: grid;
+        place-items: center;
+        padding: 0 20px;
+        font-size: 30px;
+        color: rgb(240, 240, 240);
+        margin-bottom: 18px;
+        @media (max-width: 700px) {
+          padding: 0 10px;
+          font-size: 25px;
+        }
+        @media (max-width: 596px) {
+          font-size: 20px;
+        }
+      }
+
+      > span {
+        text-align: center;
+
+        > h2 {
+          font-weight: bold;
+          color: white;
+          font-size: 23px;
+          text-align: center;
+          @media (max-width: 700px) {
+            font-size: 20px;
+          }
+          @media (max-width: 596px) {
+            font-size: 15px !important;
+          }
+        }
+        > p {
+          color: #3fa7a1;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  display: flex;
+  background: #354044;
+  border-bottom: 1px solid rgb(71, 90, 97);
+  padding-bottom: 35px;
+  &__all {
+    width: 100%;
+    max-width: 1352px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    @media (max-width: 1235px) {
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .content {
+      position: relative;
+      height: 235px;
+      background: #435258;
+      width: 437px;
+      border-radius: 7px;
+      @media (max-width: 1235px) {
+        margin: 20px;
+      }
+      @media (max-width: 443px) {
+        width: 100%;
+      }
+
+      &:hover .play__btn {
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 20px;
+        background: #435258;
+        outline: none;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+      }
+      > img {
+        position: relative;
+        width: 100%;
+        height: 180px;
+        margin-top: 46px;
+        border-top: 1px solid #1fb1a9;
+        border-bottom: 1px solid #1fb1a9;
+      }
+
+      > h4 {
+        position: absolute;
+        top: -3px;
+        font-weight: bolder;
+        font-size: 23px;
+        text-align: center;
+        margin-top: 7px;
+        color: rgb(241, 241, 241);
+        width: 100%;
+        @media (max-width: 443px) {
+          font-size: 15px;
+        }
+      }
+
+      > p {
+        position: absolute;
+        top: 30%;
+        left: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 19px;
+        margin-bottom: 2px;
+        text-shadow: 1px 1px rgb(75, 73, 73);
+        font-weight: 400;
+        width:50%;
+        @media (max-width: 443px) {
+          text-align: center;
+          left: 40px;
+          font-size: 13px;
+        }
+      }
+      .play__btn {
+        display: none;
+      }
+    }
+  }
+}
+
+.banner1,
+.banner2 ,
+.banner3{
+  position: relative;
+
+  > span {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    width: 100%;
+    max-width: 1352px;
+    margin: auto;
+    @media (max-width: 1123px) {
+      left: 80px;
+    }
+
+    @media (max-width: 923px) {
+      left: 10px;
+    }
+
+    > h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      @media (max-width: 700px) {
+        font-size: 29px;
+      }
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 500;
+      color: white;
+      @media (max-width: 700px) {
+        font-size: 19px;
+      }
+    }
+    .button__Link {
+      position: relative;
+      top: 100px;
+      font-size: 24px;
+      color: #f2f2f2;
+      white-space: nowrap;
+      background: #1ab7af;
+      border-radius: 3px;
+      padding: 12px 70px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      @media (max-width: 700px) {
+        font-size: 20px;
+        padding: 8px 40px;
+      }
+    }
+  }
+}
+
+.slick-vertical .slick-slide {
+  border: none !important;
+}
+
+.slick-dots li button:before {
+  display: none !important;
+}
