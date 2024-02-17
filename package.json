@@ -10,7 +10,7 @@
     "redux-saga": "1.2.3",
     "web-vitals": "1.1.2",
     "react-redux": "7.2.9",
-    "react-slick": "0.28.1",
+    "react-slick": "0.30.2",
     "react-reveal": "1.2.2",
     "react-scripts": "4.0.3",
     "@reduxjs/toolkit": "1.9.3",
